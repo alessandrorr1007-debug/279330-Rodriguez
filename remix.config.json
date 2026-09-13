@@ -1,5 +1,8 @@
 {
   "project": "remixDefault",
   "version": "2.5.7",
-  "IDE": "app.remix.live"
+  "IDE": "app.remix.live",
+  "scenarios": {
+    "lastSavedScenario": "scenario.json"
+  }
 }
