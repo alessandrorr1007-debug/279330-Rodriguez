@@ -6,32 +6,46 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "invocador",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_edad",
+						"name": "valorAnterior",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "nuevoValor",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "CambioValorCantidad",
+				"type": "event"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_edad",
+						"name": "_cantidad",
 						"type": "uint256"
 					}
 				],
-				"name": "cambiarEdad",
+				"name": "cambiarCantidad",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "devolverEdad",
+				"name": "obtenerCantidad",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,30 +54,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_valor1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_valor2",
-						"type": "uint256"
-					}
-				],
-				"name": "sumar",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -80,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/5_Intro.sol": "Intro"
+			"contracts/7_Eventos.sol": "Eventos"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -94,12 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/5_Intro.sol": {
-			"keccak256": "0x83a283517fb8d64329d9ed0a95e835b2b927d85e2cb6249f95c21bae52a15f61",
+		"contracts/7_Eventos.sol": {
+			"keccak256": "0xbe47cc9ceec55f138ad15c5a51beac7b83df548bf5ef7fea76f9bc1a082e8244",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e61c27b786a735379d516193f850a7bc63e9b0c6901ff3ead92a0cda67541235",
-				"dweb:/ipfs/QmUFz82K69si2wuavm37pHHDE6MBnX615FuPM4GwpEnp5A"
+				"bzz-raw://38ebe7c8fcebcf73f514037537600da3b7f2a48c7548b812731c640bd5208a74",
+				"dweb:/ipfs/QmNy4PxRXwwSyC9E1EbfAEQS7mJ5VrCJVcfgvvJUVnPZoo"
 			]
 		}
 	},
