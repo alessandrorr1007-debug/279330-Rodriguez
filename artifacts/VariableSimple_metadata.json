@@ -56,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/5_VariablesSimples.sol": "VariablesSimples"
+			"contracts/5_VariableSimple.sol": "VariableSimple"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -70,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/5_VariablesSimples.sol": {
-			"keccak256": "0x59682ee000752f57ca339bff34f254e0aa6523012d1a8ae9f4837ce7b40e3118",
+		"contracts/5_VariableSimple.sol": {
+			"keccak256": "0xb46683a71e9e84537a2a2a30ce400838504438426352cbecd778710c8e1b7e56",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3999d1375767cf4a0be2e45213322c50205112e22ccd782d22928b80e557e5ec",
-				"dweb:/ipfs/Qma7pDU8JEcZxnzGZLLzz9buyEqwa4DrC6RCMUYt28kk9D"
+				"bzz-raw://21749bc12ab798a5c44a0c6b9810275722b85ab961be82aabe2d890858aa6ddb",
+				"dweb:/ipfs/QmdBWrPxiYPVyEzMUo2gigZz6GCwvMfaTAKfCZkgD7VQ9S"
 			]
 		}
 	},
