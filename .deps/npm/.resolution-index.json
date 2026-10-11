@@ -259,5 +259,13 @@
         "file": "contracts/17_PC1_GetCuenta.sol"
       }
     }
+  },
+  "contracts/18_Hospital279330.sol": {
+    "__sources__": {
+      "contracts/18_Hospital279330.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity 0.8.1;\r\n\r\ncontract Hospital279330 {\r\n\r\n    struct Paciente {\r\n        uint256 id;\r\n        string nombre;\r\n        uint256 edad;\r\n        string especialidad;\r\n    }\r\n\r\n    Paciente[] public pacientes;\r\n\r\n    uint256 public posicion;\r\n    address public direccion;\r\n\r\n    constructor(uint256 _posicion) {\r\n        posicion = _posicion;\r\n        direccion = msg.sender;\r\n    }\r\n}",
+        "file": "contracts/18_Hospital279330.sol"
+      }
+    }
   }
 }
