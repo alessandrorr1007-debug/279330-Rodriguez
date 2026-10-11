@@ -37,6 +37,11 @@
 						"internalType": "string",
 						"name": "_especialidad",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_estado",
+						"type": "bool"
 					}
 				],
 				"name": "agregarElemento",
@@ -87,6 +92,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "inactivarPaciente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -112,6 +130,11 @@
 						"internalType": "string",
 						"name": "especialidad",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "estado",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -159,11 +182,11 @@
 	},
 	"sources": {
 		"contracts/18_Hospital279330.sol": {
-			"keccak256": "0x39f7e8a8df1ecb9d441e60109db2a11f5acec635d4723040c24cb1742f3839f8",
+			"keccak256": "0x28bd06380a0f64c24000bc1945226af4930d60c119eba719b71795bcb9a2b25f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://075a598891a132844c7d869bfabdeded06285f3c57e78e31b45a500ad266f5a4",
-				"dweb:/ipfs/QmbzPpcbFYDrQak8Z6Lr11CcyNBB6RZzowXDYMwAPyDmwX"
+				"bzz-raw://f85527bafd8ffda40dc5fb8828e901b730938ad4d06c41b38ec039c390244c26",
+				"dweb:/ipfs/QmTpbHe1HB9i9J1eUyGTixYrjZwmzJQy6whwAXVY7XRtbv"
 			]
 		}
 	},

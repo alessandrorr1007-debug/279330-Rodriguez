@@ -8,6 +8,7 @@ contract Hospital279330 {
         string nombre;
         uint256 edad;
         string especialidad;
+        bool estado;
     }
 
     Paciente[] public pacientes;
@@ -24,10 +25,14 @@ contract Hospital279330 {
         uint256 _id,
         string memory _nombre,
         uint256 _edad,
-        string memory _especialidad
+        string memory _especialidad,
+        bool _estado
     ) public {
         require(_id % 2 == 0, "No se permiten id impares");
-        pacientes.push(Paciente(_id, _nombre, _edad, _especialidad));
+
+        pacientes.push(
+            Paciente(_id, _nombre, _edad, _especialidad, _estado)
+        );
     }
 
     function contarElementos() public view returns (uint256) {
@@ -36,5 +41,13 @@ contract Hospital279330 {
 
     function cambiarDireccion(address _direccion) public {
         direccion = _direccion;
+    }
+
+    function inactivarPaciente(uint256 _id) external {
+        for (uint256 i = 0; i < pacientes.length; i++) {
+            if (pacientes[i].id == _id) {
+                pacientes[i].estado = false;
+            }
+        }
     }
 }
