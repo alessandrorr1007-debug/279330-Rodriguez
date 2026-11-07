@@ -322,14 +322,6 @@
       }
     }
   },
-  "contracts/21_Teleton.sol": {
-    "__sources__": {
-      "contracts/21_Teleton.sol": {
-        "content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Teleton {\r\n    address public owner;\r\n    mapping(address => bool) public administradores;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function agregarAdmins(address _cuenta) public {\r\n        administradores[_cuenta] = true;\r\n    }\r\n\r\n    modifier isOwner() {\r\n        require(msg.sender == owner, \"No eres el owner del contrato\");\r\n        _;\r\n    }\r\n\r\n    modifier isAdmin() {\r\n        require(administradores[msg.sender] == true, \"No eres parte de los administradores\");\r\n        _;\r\n    }\r\n\r\n    function depositar() public payable {\r\n        \r\n    }\r\n\r\n    function consultarBalance() public view isAdmin returns(uint256) {\r\n        return address(this).balance;\r\n    }\r\n\r\n    function retirar() public isOwner {\r\n        payable(owner).transfer(address(this).balance);\r\n    }\r\n\r\n    function retirarAdmin(address _cuenta) public isAdmin {\r\n        payable(_cuenta).transfer(address(this).balance);\r\n    }\r\n    \r\n}",
-        "file": "contracts/21_Teleton.sol"
-      }
-    }
-  },
   "@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol": {
     "./IERC20.sol": ".deps/npm/@openzeppelin/contracts@5.6.1/token/ERC20/IERC20.sol",
     "./extensions/IERC20Metadata.sol": ".deps/npm/@openzeppelin/contracts@5.6.1/token/ERC20/extensions/IERC20Metadata.sol",
@@ -378,5 +370,13 @@
   },
   "@openzeppelin/contracts@5.6.1/access/Ownable.sol": {
     "../utils/Context.sol": ".deps/npm/@openzeppelin/contracts@5.6.1/utils/Context.sol"
+  },
+  "contracts/21_Teleton.sol": {
+    "__sources__": {
+      "contracts/21_Teleton.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Teleton {\r\n    address public owner;\r\n    mapping(address => bool) public administradores;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function agregarAdmins(address _cuenta) public {\r\n        administradores[_cuenta] = true;\r\n    }\r\n\r\n    modifier isOwner() {\r\n        require(msg.sender == owner, \"No eres el owner del contrato\");\r\n        _;\r\n    }\r\n\r\n    modifier isAdmin() {\r\n        require(administradores[msg.sender] == true, \"No eres parte de los administradores\");\r\n        _;\r\n    }\r\n\r\n    function depositar() public payable {\r\n        \r\n    }\r\n\r\n    function consultarBalance() public view isAdmin returns(uint256) {\r\n        return address(this).balance;\r\n    }\r\n\r\n    function retirar() public isOwner {\r\n        payable(owner).transfer(address(this).balance);\r\n    }\r\n\r\n    function retirarAdmin(address _cuenta) public isAdmin {\r\n        payable(_cuenta).transfer(address(this).balance);\r\n    }\r\n    \r\n}",
+        "file": "contracts/21_Teleton.sol"
+      }
+    }
   }
 }
