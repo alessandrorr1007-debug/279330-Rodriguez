@@ -509,11 +509,11 @@
 			]
 		},
 		"contracts/20_MiTokenERC20.sol": {
-			"keccak256": "0xdda34221dc6cc9661e73d25ca1d396c2e7ed3072abcd0cab9a240754d368bce4",
+			"keccak256": "0x949637b0fb469f7e239bab192ffc27396c52af194567c9c9596af938ee2f2b29",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://369fb7bd795a4eaecf7464033377b3372d84289cf87b07112c08647c73b4e504",
-				"dweb:/ipfs/QmaL7WFhk2PiU3QmFdf2hwupF2higFD6H75S7V1PAYaV1i"
+				"bzz-raw://2887185e59f5ac1e01ad3f078d606836a8a2b710ed5cf6e110b88359da696e1b",
+				"dweb:/ipfs/QmerKjefoL3gGfwqthoLqBGZE43rzLu5NmpysiBEYNdGCU"
 			]
 		}
 	},

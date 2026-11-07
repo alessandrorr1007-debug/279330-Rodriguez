@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract MiTokenERC20 is ERC20 {
     constructor() ERC20("Ballenita Fan Token", "BFT") {
-        _mint(msg.sender, 10000000 * 10 ** decimals()); 
+        _mint(msg.sender, 1000 * 10 ** decimals()); 
     }
 
     // Función para ver el Supply total formateado (sin los 18 ceros)
